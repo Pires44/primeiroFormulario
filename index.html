@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Inscrição para a banda <br />
+        "Gojira"
+      </h1>
+    </header>
+    <main>
+      <form action="Cadastrado com sucesso.html" method="post">
+        <div>
+          <label for="nome">Nome:</label>
+          <input
+            class="input"
+            type="text"
+            name="nome"
+            id="nome"
+            required
+            placeholder="Nome completo"
+          />
+        </div>
+        <div>
+          <label for="email">Emai:</label>
+          <input class="input" type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="tel">Telefone:</label>
+          <input class="input" type="number" name="tel" id="tel" required />
+        </div>
+        <div>
+          <label for="endereco">Endereço:</label>
+          <input
+            class="input"
+            type="endereco"
+            name="endereco"
+            id="endereco"
+            required
+          />
+        </div>
+        <div>
+          <label for="data">Data de Nascimento:</label>
+          <input class="input" type="date" name="data" id="data" required />
+        </div>
+        <div id="sexo">
+          <p>Sexo:</p>
+          <label for="M">Masculino</label>
+          <input class="sexoE" class="sexo" type="radio" name="sexo" id="M" required value="M" />
+
+          <label for="F">Feminino</label>
+          <input class="sexoE"  type="radio" name="sexo" id="F" required value="F" />
+        </div>
+        <div>
+          <p >Instrumentos:</p>
+          <label for="guitarra">Guitarra</label>
+          <input class="pointer"  type="checkbox" name="guitarra" id="guitarra"  />
+
+          <label for="Bateria">Bateria</label>
+          <input class="pointer"  type="checkbox" name="Bateria" id="Bateria"  />
+
+          <label for="Baixo">Baixo</label>
+          <input class="pointer"  type="checkbox" name="Baixo" id="Baixo"  />
+
+          <label for="Teclado">Teclado</label>
+          <input class="pointer"  type="checkbox" name="Teclado" id="Teclado"  />
+        </div>
+        <div>
+            <p>Fale sobre você e suas infliências musicais!</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+       <div id="submit">
+      <input type="submit" id="submit" value="Enviar"> 
+
+       </div>
+      </form>
+    </main>
+
+    <footer>&copy;Pedro Augusto</footer>
+  </body>
+</html>
